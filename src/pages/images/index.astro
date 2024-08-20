@@ -1,0 +1,26 @@
+---
+import MainLayout from "src/layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+
+import post05 from "@images/post-05.png";
+
+
+---
+
+<MainLayout title="Imagenes">
+    <h1 class="text-5xl">Imágenes</h1>
+    <img src="/assets/images/post-05.png" alt="" width="250" height="250">
+    <Image
+        src={post05}
+        alt="Imagen de prueba"
+        width={250}
+        height={250}
+    />
+    <div style={{
+        height: "3000px",
+    }}>
+    
+    </div>
+    <img src="/assets/images/post-05.png" alt="" width="250" height="250">
+
+</MainLayout>
